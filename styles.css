@@ -250,3 +250,21 @@ p{line-height:1.65}
  .visit-panel{padding:25px!important}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.story-strip img{transition:none!important}}
+
+
+/* Weekly gathering schedule */
+.gathering-times{margin:26px 0 12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gathering-day{display:grid;grid-template-columns:105px 1fr;column-gap:20px;padding:18px 0}
+.gathering-day+.gathering-day{border-top:1px solid var(--line)}
+.gathering-label{color:var(--orange-dark);font-size:10px;font-weight:800;letter-spacing:.14em;padding-top:5px}
+.gathering-item{grid-column:2;display:grid;grid-template-columns:95px 1fr;gap:12px;align-items:baseline;padding:4px 0}
+.gathering-item strong{font-size:15px;white-space:nowrap}
+.gathering-item span{font-size:14px;color:var(--muted);line-height:1.5}
+.gathering-address{font-size:13px!important;color:var(--muted);margin:12px 0 0!important}
+.visit-service-times{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px;margin:12px 0}
+.visit-service-times strong{font:800 clamp(32px,3.6vw,48px)/1.15 Manrope,sans-serif;letter-spacing:-.07em;color:inherit}
+.visit-service-times strong small{font-size:13px;letter-spacing:0}
+.visit-service-times>span{font-size:12px;color:#d1d6cd}
+.visit-panel .visit-service-times strong{color:white!important}
+.visit-panel p{line-height:1.75}
+@media(max-width:600px){.gathering-day{grid-template-columns:1fr;gap:8px;padding:15px 0}.gathering-item{grid-column:1;grid-template-columns:83px 1fr;gap:10px}.gathering-item strong{font-size:14px}.gathering-item span{font-size:13px}.visit-service-times{gap:7px}.visit-service-times strong{font-size:clamp(27px,8vw,40px)}.visit-service-times strong small{font-size:11px}}
