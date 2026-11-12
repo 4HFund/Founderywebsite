@@ -106,3 +106,113 @@ body{background:var(--paper)}
 .footer-brand{font-weight:700}
 @media(max-width:760px){.hero-copy:before{display:none}.brand-logo{width:43px;height:43px;flex-basis:43px}.brand strong{font-size:19px}}
 @media(prefers-reduced-motion:reduce){.photo-ribbon img,.life-grid img,.people-photo img,.moments-photo img,.mission-images img,.gather-visual img{transition:none!important}.gather-visual:hover img,.people-photo:hover img,.moments-photo:hover img,.life-grid figure:hover img{transform:none!important}}
+
+
+/* FOUNDERY / Bold creative art direction */
+:root{--paper:#f7f4ed;--ink:#17231f;--muted:#5e6761;--orange:#ef7032;--line:#dedbd2}
+body{background:var(--paper)}
+.site-header{height:82px;background:rgba(247,244,237,.96);border-bottom:2px solid #202b25}
+.nav-shell{max-width:1320px}
+.brand-logo{width:52px;height:52px;flex-basis:52px;border-radius:5px;box-shadow:none;border:1px solid rgba(22,34,29,.15)}
+.brand-logo img{object-fit:cover}
+.brand strong{font-size:23px;letter-spacing:-.08em}
+.site-header nav a{font-size:12px;font-weight:800;letter-spacing:.035em;text-transform:uppercase}
+.site-header nav a:last-child{background:var(--orange);color:#19231e;padding:13px 18px;border:0;transform:skew(-5deg);transition:background .2s,transform .2s}
+.site-header nav a:last-child:hover{background:#ffa36d;transform:skew(-5deg) translateY(-2px)}
+.hero{min-height:min(880px,calc(100svh - 82px));overflow:hidden;background:#111c18}
+.hero-image{background-position:center 44%;filter:saturate(.88) contrast(1.08)}
+.hero-shade{background:linear-gradient(90deg,rgba(6,16,13,.91),rgba(6,16,13,.65) 51%,rgba(6,16,13,.12)),linear-gradient(0deg,rgba(6,16,13,.55),transparent 48%)}
+.hero:after{content:'';position:absolute;z-index:-1;width:35vw;height:35vw;max-width:540px;max-height:540px;border:1px solid rgba(255,255,255,.14);border-radius:50%;right:-9vw;top:10%;box-shadow:0 0 0 65px rgba(255,255,255,.035),0 0 0 130px rgba(255,255,255,.025);pointer-events:none}
+.hero-content{padding:105px 0 145px}
+.hero h1{font-size:clamp(70px,9.5vw,138px);line-height:.96;letter-spacing:-.085em;margin:28px 0}
+.hero h1 em{color:#ff9a60;font-style:italic}
+.hero-copy>p{font-size:clamp(18px,1.85vw,23px);line-height:1.55}
+.hero-index{position:absolute;right:30px;top:40%;z-index:1;writing-mode:vertical-rl;transform:rotate(180deg);color:rgba(255,255,255,.68);font-size:10px;font-weight:800;letter-spacing:.2em}
+.hero-bottom{border-top:2px solid rgba(255,255,255,.3);font-weight:800}
+.button-pair{gap:10px;margin-top:34px}
+.image-button{transition:transform .25s,filter .25s}
+.image-button:hover{transform:translateY(-4px) rotate(-1deg)}
+.statement-band{overflow:hidden;background:var(--orange);color:#14211b;border-block:2px solid #17231f}
+.statement-track{display:flex;align-items:center;justify-content:space-around;gap:22px;white-space:nowrap;width:max-content;min-width:100%;padding:17px 25px;font:800 clamp(14px,2.2vw,23px)/1.2 Manrope,sans-serif;letter-spacing:-.045em}
+.statement-track span{font-size:22px}
+.intro{padding-top:105px}
+.intro-heading h2,.life-head h2{font-size:clamp(42px,5.8vw,82px);letter-spacing:-.072em}
+.intro-heading h2 em,.life-head h2 em{color:#b3542d}
+.intro-heading>p{font-size:17px}
+.photo-ribbon{gap:10px}
+.photo-ribbon figure{position:relative}
+.photo-ribbon img{height:385px;filter:saturate(.93)}
+.photo-ribbon figcaption{font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.07em}
+.section-marker{position:relative;max-width:1320px;margin:0 auto 22px;padding:0 32px;color:#b2542d;font-size:10px;font-weight:800;letter-spacing:.22em}
+.gather{padding:105px 0;background:#ebe9e1}
+.gather-visual{aspect-ratio:4/5;box-shadow:17px 17px 0 #dfd9cb}
+.gather-content h2,.people-copy h2,.moments-copy h2,.mission-copy h2,.visit-copy h2{letter-spacing:-.07em}
+.schedule{border-top:2px solid #1c2b24}
+.schedule-heading{color:#b2542d}
+.schedule-heading.wed{border-top:1px solid #c8c6bc}
+.text-link{font-weight:800;letter-spacing:.01em;border-bottom:2px solid var(--orange)}
+.life{padding:105px 0}
+.life-grid{gap:14px}
+.life-grid figure:nth-child(2){transform:translateY(30px)}
+.life-grid img{height:380px;filter:saturate(.94)}
+.life-grid figcaption span{color:#ae522c}
+.life-grid figcaption strong{font-size:22px}
+.people{background:#1b2923;color:#fff;padding:110px 0}
+.people .section-marker{color:#ffad7a}
+.people .kicker{color:#ffad7a}
+.people-copy h2 em{color:#ffa777}
+.people-copy p{color:#d5ded6;font-size:17px}
+.people-photo{box-shadow:18px 18px 0 rgba(239,112,50,.75)}
+.people .text-link{color:#ffb38a}
+.moments{padding:100px 0}
+.moments-photo{box-shadow:-14px 14px 0 #e7c6b2}
+.moments-wide{margin-top:32px}
+.moments-wide img{height:310px}
+.mission{padding:115px 0;background:#253a2e;position:relative;overflow:hidden}
+.mission:before{content:'HOPE';position:absolute;bottom:-.16em;right:-.05em;font:800 clamp(130px,25vw,370px)/1 Manrope,sans-serif;letter-spacing:-.12em;color:rgba(255,255,255,.045);pointer-events:none}
+.mission .section-marker{color:#ffad7a}
+.mission-images{position:relative;z-index:1}
+.mission-primary{box-shadow:-12px 12px 0 var(--orange)}
+.mission-copy{position:relative;z-index:1}
+.mission-copy h2 em{color:#ffa777}
+.visit{padding:110px 0;background:#f4e5d7}
+.visit .section-marker{color:#a94a25}
+.visit-note{border:2px solid #24352c;border-top:8px solid var(--orange);background:#fffaf4;box-shadow:15px 15px 0 #d8bda9;border-radius:0}
+.visit-note>span{color:#a94a25}
+.visit-times strong{font-size:clamp(42px,4.7vw,68px)}
+.footer{background:#111c17}
+.footer-brand strong{color:#ff9a60}
+@media(max-width:900px){.hero-index{display:none}.life-grid img{height:300px}.photo-ribbon img{height:300px}}
+@media(max-width:760px){
+ .site-header{height:70px}.brand-logo{width:42px;height:42px;flex-basis:42px}
+ .site-header nav a:last-child{transform:none;background:transparent;color:#a94a25;padding:12px 0;border-bottom:1px solid var(--line)}
+ .site-header nav a:last-child:hover{transform:none}
+ .hero{min-height:690px}
+ .hero h1{font-size:clamp(60px,11.6vw,91px)}
+ .intro{padding-top:75px}
+ .section-marker{padding:0 20px}
+ .gather,.life,.people,.moments,.mission,.visit{padding:75px 0}
+ .gather-visual{box-shadow:9px 9px 0 #dfd9cb}
+ .life-grid figure:nth-child(2){transform:none}
+ .people-photo{box-shadow:9px 9px 0 rgba(239,112,50,.75)}
+ .moments-photo{box-shadow:-8px 8px 0 #e7c6b2}
+ .visit-note{box-shadow:9px 9px 0 #d8bda9}
+}
+@media(max-width:520px){
+ .hero{min-height:665px}
+ .hero h1{font-size:clamp(55px,12.5vw,74px)}
+ .hero-content{padding-top:70px}
+ .statement-track{justify-content:flex-start;gap:15px;padding:14px 18px;font-size:14px}
+ .statement-track span{font-size:17px}
+ .intro-heading h2,.life-head h2{font-size:clamp(37px,10vw,50px)}
+ .photo-ribbon img{height:188px}
+ .photo-ribbon .photo-three img{height:225px}
+ .gather,.life,.people,.moments,.mission,.visit{padding:56px 0}
+ .life-grid img{height:190px}
+ .life-grid figure:last-child img{height:225px}
+ .life-grid figcaption strong{font-size:16px}
+ .moments-wide img{height:185px}
+ .visit-note{padding:25px 20px}
+ .visit-times strong{font-size:clamp(32px,9vw,46px)}
+}
+@media(prefers-reduced-motion:reduce){.image-button:hover{transform:none}}
